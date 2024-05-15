@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--=============== FONT AWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--=============== JS ===============-->
+    <script src="countries.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <title>Language Translator</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <div class="container header">
+      <h1 class="title">Language Translator</h1>
+    </div>
+
+    <!--=============== TRANSLATOR ===============-->
+    <div class="container translator">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea class="from-text" placeholder="Enter Text"></textarea>
+          <textarea
+            class="to-text"
+            placeholder="Translation"
+            readonly
+            disabled
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <select></select>
+          </li>
+          <li class="exchange">
+            <i class="fas fa-exchange-alt"></i>
+          </li>
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button>Translate Text</button>
+    </div>
+  </body>
+</html>
